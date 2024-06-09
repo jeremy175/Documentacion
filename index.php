@@ -19,28 +19,36 @@
                 </div>
                 
                 <ul>
-                    <li><a href="#" onclick="showContent('content1')">Minijuegos</a></li>
+                <li><a href="#" onclick="showContent('content1')">UTP +play</a></li>
                     <li><a href="#" onclick="showContent('content2')">Login</a></li>
                     <li><a href="#" onclick="showContent('content3')">Menú Principal</a></li>
-                    <li><a href="#" onclick="showContent('content4')">Tienda</a></li>
-                    <li><a href="#" onclick="showContent('content5')">Ventanas emergentes</a></li>
+                <li><a href="#" onclick="showContent('content4')">Minijuegos</a></li>
+                <li><a href="#" onclick="showContent('content5')">Tienda</a></li>
+                    <li><a href="#" onclick="showContent('content6')">Ventanas emergentes</a></li>
                 </ul>
             </nav>
         </section>
-        <!--Seccion de minijuegos-->
+        <!--Seccion de UTP+play-->
         <section class="right-section">
-            <h2>Documentación</h2>
-            <div id="content1" class="content">
-                <h1>Titulo: Minijuegos</h1>
-                <img src="https://via.placeholder.com/300">
-                <p>Ingrese el titulo</p>
-                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
-                <p>Ingrese variables</p>
-                <h2>Eventos</h2>
-                <p>Ingrese eventos</p>
-            </div>
-            <!--Seccion de Login-->
-            <div id="content2" class="content" style="display: none;">
+        <h2>Documentación</h2>  
+        <div id="content1" class="content" style="display: none;">  
+        <h1>Titulo: UTP + play</h1>
+                <img src="./img/inicial.png" width="600px">
+                <p>Una plataforma creada con la finalidad de mejorar el proceso de inducción de los nuevos ingresantes UTP, +play busca que el alumno aprenda a través de minijuegos y quizz interactivos.
+                </p>
+                <h2>Tecnologías</h2><!--Definir sus variables de los minijuegos-->
+                <p>El desarrollo de la plataforma se ha dividido en 3 sectores, a continuación se presentan las herramientas usadas por cada sector respectivamente:
+                <ul>
+                    <li><b>Diseño UI/UX:</b>Figma</li>
+                    <LI><b>Desarrollo frontend:</b>Html5, JS, CSS3 y boostrap5</LI>
+                    <li><b>Desarrollo Backend:</b>php y mysqlPHP my admin</li>
+                </ul>
+                </p>
+                <h2>Recursos:</h2>
+                <p>Enlace figma: <a href="https://www.figma.com/design/oQvntsbTtE1pSKL2dQi8Bf/HACKATON-RETO-2-ONBOARDING-FIGMA?node-id=251-18&t=6m47Lq66OwummRKg-1" target="_blank">Presionar aquí</a></p>
+        </div>
+        <!--Seccion de Login-->
+        <div id="content2" class="content" style="display: none;">
                 <h1>Titulo: Login</h1>
                 <img src="./img/login.png" class="menu1 imgmenu">
             
@@ -60,8 +68,8 @@
                     </ul>
                 </p>
             </div>
-            <!--Seccion de Menú-->
-            <div id="content3" class="content" style="display: none;">
+        <!--Seccion de Menú-->
+        <div id="content3" class="content" style="display: none;">
                 <h1>Titulo: Menú Principal</h1>
                 <div class="recursosMenu">
                     <img src="./img/menu1.PNG" class="menu1 imgmenu">
@@ -88,8 +96,18 @@
                 </ul>
                 </p>
             </div>
+        <!--Seccion de minijuegos-->
+            <div id="content4" class="content">
+                <h1>Titulo: Minijuegos</h1>
+                <img src="https://via.placeholder.com/300">
+                <p>Ingrese el titulo</p>
+                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <p>Ingrese variables</p>
+                <h2>Eventos</h2>
+                <p>Ingrese eventos</p>
+            </div>            
             <!--Seccion de tienda-->
-            <div id="content4" class="content" style="display: none;">
+            <div id="content5" class="content" style="display: none;">
                 <h1>Titulo: Tienda</h1>
                 <img src="https://via.placeholder.com/300">
                 <p>Ingrese el titulo</p>
@@ -99,7 +117,7 @@
                 <p>Ingrese eventos</p>
             </div>
             <!--Seccion ventanas emergentes-->
-            <div id="content5" class="content" style="display: none;">
+            <div id="content6" class="content" style="display: none;">
                 <h1>Titulo: Ventanas emergentes</h1>
                 <img src="https://via.placeholder.com/300">
                 <p>Ingrese el titulo</p>
