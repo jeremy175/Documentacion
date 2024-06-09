@@ -109,12 +109,24 @@
             <!--Seccion de tienda-->
             <div id="content5" class="content" style="display: none;">
                 <h1>Titulo: Tienda</h1>
-                <img src="https://via.placeholder.com/300">
-                <p>Ingrese el titulo</p>
+                <img src="./img/tienda1.PNG" class="menu1 imgmenu">
+                <img src="./img/tienda.PNG" class="menu2 imgmenu">
                 <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
-                <p>Ingrese variables</p>
+                <p>
+                <ul>
+                    <li>coins(int): monedas actuales del jugador</li>
+                    <li>product_nombre(String): nombre del producto</li>
+                    <li>precio_producto(int): precio del producto</li>
+                </ul>
+                </p>
                 <h2>Eventos</h2>
-                <p>Ingrese eventos</p>
+                <p>
+                <ul>
+                    <li>Mostrar productos para comprar con UtpCoins</li>
+                    <li>Mostrar el total de UtpCoins antes y despues de la compra</li>
+                </ul>
+                </p>
+
             </div>
             <!--Seccion ventanas emergentes-->
             <div id="content6" class="content" style="display: none;">
