@@ -53,8 +53,8 @@
             <div id="content3" class="content" style="display: none;">
                 <h1>Titulo: Menú Principal</h1>
                 <div class="recursosMenu">
-                    <img src="./recursos/menu1.PNG" class="menu1 imgmenu">
-                    <img src="./recursos/menu2.PNG" class="menu2 imgmenu">
+                    <img src="./img/menu1.PNG" class="menu1 imgmenu">
+                    <img src="./img/menu2.PNG" class="menu2 imgmenu">
                 </div>
                 <h2>Variables</h2><!--Definir sus variables uwu-->
                 <p>
