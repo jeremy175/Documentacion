@@ -7,43 +7,42 @@ body, html {
 
 .page-container {
     display: flex;
-    flex-wrap: wrap;
     height: 100vh;
+    overflow: hidden;
 }
 
 .left-section {
     background-color: #f0f0f0;
-    flex: 1 1 30%;
+    width: 30%;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    height: 100%;
     z-index: 999;
+    overflow-y: auto;
 }
-.titleSideBar{
+
+.titleSideBar {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.titleSideBar h2{
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+
+.titleSideBar h2, .titleSideBar h3, .titleSideBar h4 {
+    margin: 0.3em 0;
 }
-.titleSideBar h3{
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-}
-.titleSideBar h4{
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-}
+
 .right-section {
     background-color: #e0e0e0;
-    flex: 1 1 70%;
+    margin-left: 30%;
     padding: 20px;
     box-sizing: border-box;
+    flex-grow: 1;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -84,31 +83,35 @@ body, html {
 }
 
 @media (max-width: 425px) {
-    .left-section, .right-section {
-        flex: 1 1 100%;
+    .left-section {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .right-section {
+        margin-left: 0;
     }
 }
 
 /*MENU PRINCIPAL*/
 
-.recursosMenu{
+.recursosMenu {
     display: flex;
     justify-content: space-around;
 }
-.imgmenu{
+
+.imgmenu {
     height: 200px;
 }
-/* END MENU PRINCIPAL*/
 
 /*PARTICLES*/
 
-#particles-js{
+#particles-js {
     width: auto;
     height: 100%;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
-
-/*END PARTICLES*/

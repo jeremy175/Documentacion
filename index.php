@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>División de Página</title>
+    <title>Documentación</title>
     <link rel="stylesheet" href="styless.css">
 </head>
 
-<body>
+<body onload="showContent('content1')">
     <div class="page-container">
         <section class="left-section">
             <nav class="sidebar-menu">
@@ -19,63 +19,59 @@
                 </div>
                 
                 <ul>
-                <li><a href="#" onclick="showContent('content1')">UTP +play</a></li>
+                    <li><a href="#" onclick="showContent('content1')">UTP +play</a></li>
                     <li><a href="#" onclick="showContent('content2')">Login</a></li>
                     <li><a href="#" onclick="showContent('content3')">Menú Principal</a></li>
-                <li><a href="#" onclick="showContent('content4')">Minijuegos</a></li>
-                <li><a href="#" onclick="showContent('content5')">Tienda</a></li>
+                    <li><a href="#" onclick="showContent('content4')">Minijuegos</a></li>
+                    <li><a href="#" onclick="showContent('content5')">Tienda</a></li>
                     <li><a href="#" onclick="showContent('content6')">Ventanas emergentes</a></li>
                 </ul>
             </nav>
         </section>
         <!--Seccion de UTP+play-->
         <section class="right-section">
-        <h2>Documentación</h2>  
-        <div id="content1" class="content" style="display: none;">  
-        <h1>Titulo: UTP + play</h1>
+            <div id="content1" class="content">
+                <h1>Titulo: UTP + play</h1>
                 <img src="./img/inicial.png" width="600px">
-                <p>Una plataforma creada con la finalidad de mejorar el proceso de inducción de los nuevos ingresantes UTP, +play busca que el alumno aprenda a través de minijuegos y quizz interactivos.
-                </p>
-                <h2>Tecnologías</h2><!--Definir sus variables de los minijuegos-->
-                <p>El desarrollo de la plataforma se ha dividido en 3 sectores, a continuación se presentan las herramientas usadas por cada sector respectivamente:
+                <p>Una plataforma creada con la finalidad de mejorar el proceso de inducción de los nuevos ingresantes UTP, +play busca que el alumno aprenda a través de minijuegos y quizz interactivos.</p>
+                <h2>Tecnologías</h2>
+                <p>El desarrollo de la plataforma se ha dividido en 3 sectores, a continuación se presentan las herramientas usadas por cada sector respectivamente:</p>
                 <ul>
-                    <li><b>Diseño UI/UX:</b>Figma</li>
-                    <LI><b>Desarrollo frontend:</b>Html5, JS, CSS3 y boostrap5</LI>
-                    <li><b>Desarrollo Backend:</b>php y mysqlPHP my admin</li>
+                    <li><b>Diseño UI/UX:</b> Figma</li>
+                    <li><b>Desarrollo frontend:</b> Html5, JS, CSS3 y boostrap5</li>
+                    <li><b>Desarrollo Backend:</b> php y mysqlPHP my admin</li>
                 </ul>
-                </p>
                 <h2>Recursos:</h2>
                 <p>Enlace figma: <a href="https://www.figma.com/design/oQvntsbTtE1pSKL2dQi8Bf/HACKATON-RETO-2-ONBOARDING-FIGMA?node-id=251-18&t=6m47Lq66OwummRKg-1" target="_blank">Presionar aquí</a></p>
-        </div>
-        <!--Seccion de Login-->
-        <div id="content2" class="content" style="display: none;">
+            </div>
+            <!--Seccion de Login-->
+            <div id="content2" class="content" style="display: none;">
                 <h1>Titulo: Login</h1>
                 <img src="./img/login.png" class="menu1 imgmenu">
-            
-                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <h2>Variables</h2>
                 <p>
-                    <ul>
-                        <li> cod_alumno: Codigo que ingresa el estudiante</li>
-                        <li> contrasena: Contraseña correspondiente al estudiante</li>
-                    </ul>
+                <ul>
+                    <li>cod_alumno: Codigo que ingresa el estudiante</li>
+                    <li>contrasena: Contraseña correspondiente al estudiante</li>
+                </ul>
                 </p>
                 <h2>Eventos</h2>
                 <p>
-                    <ul>
-                    <li>Evento de escucha del formulario para enviar el usuario y contraseña  </li>
+                <ul>
+                    <li>Evento de escucha del formulario para enviar el usuario y contraseña</li>
                     <li>Evento de escucha para mostrar/ocultar la contraseña</li>
                     <li>Evento de consulta con el usuario y contraseña</li>
-                    </ul>
+                </ul>
                 </p>
             </div>
-        <!--Seccion de Menú-->
-        <div id="content3" class="content" style="display: none;">
+            <!--Seccion de Menú-->
+            <div id="content3" class="content" style="display: none;">
                 <h1>Titulo: Menú Principal</h1>
                 <div class="recursosMenu">
                     <img src="./img/menu1.PNG" class="menu1 imgmenu">
                     <img src="./img/menu2.PNG" class="menu2 imgmenu">
                 </div>
-                <h2>Variables</h2><!--Definir sus variables uwu-->
+                <h2>Variables</h2>
                 <p>
                 <ul>
                     <li>level(int): nivel actual del jugador</li>
@@ -96,22 +92,22 @@
                 </ul>
                 </p>
             </div>
-        <!--Seccion de minijuegos-->
-            <div id="content4" class="content">
+            <!--Seccion de minijuegos-->
+            <div id="content4" class="content" style="display: none;">
                 <h1>Titulo: Minijuegos</h1>
                 <img src="https://via.placeholder.com/300">
                 <p>Ingrese el titulo</p>
-                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <h2>Variables</h2>
                 <p>Ingrese variables</p>
                 <h2>Eventos</h2>
                 <p>Ingrese eventos</p>
-            </div>            
+            </div>
             <!--Seccion de tienda-->
             <div id="content5" class="content" style="display: none;">
                 <h1>Titulo: Tienda</h1>
                 <img src="./img/tienda1.PNG" class="menu1 imgmenu">
                 <img src="./img/tienda.PNG" class="menu2 imgmenu">
-                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <h2>Variables</h2>
                 <p>
                 <ul>
                     <li>coins(int): monedas actuales del jugador</li>
@@ -126,14 +122,13 @@
                     <li>Mostrar el total de UtpCoins antes y despues de la compra</li>
                 </ul>
                 </p>
-
             </div>
             <!--Seccion ventanas emergentes-->
             <div id="content6" class="content" style="display: none;">
                 <h1>Titulo: Ventanas emergentes</h1>
                 <img src="https://via.placeholder.com/300">
                 <p>Ingrese el titulo</p>
-                <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
+                <h2>Variables</h2>
                 <p>Ingrese variables</p>
                 <h2>Eventos</h2>
                 <p>Ingrese eventos</p>
@@ -144,118 +139,123 @@
     <script src="scripts.js"></script>
     <script src="particles.min.js"></script>
     <script>
-        particlesJS(
-            {
-                "particles": {
-                    "number": {
-                        "value": 80,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#0c2b57"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": false,
-                        "anim": {
-                            "enable": false,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 3,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#b12828",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 6,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "repulse"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 200,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": true
+        function showContent(contentId) {
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
             }
-        )
+            document.getElementById(contentId).style.display = 'block';
+        }
+
+        particlesJS({
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#0c2b57"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#b12828",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        })
     </script>
 </body>
 
