@@ -42,12 +42,23 @@
             <!--Seccion de Login-->
             <div id="content2" class="content" style="display: none;">
                 <h1>Titulo: Login</h1>
-                <img src="https://via.placeholder.com/300">
-                <p>Ingrese el titulo</p>
+                <img src="./img/login.png" class="menu1 imgmenu">
+            
                 <h2>Variables</h2><!--Definir sus variables de los minijuegos-->
-                <p>Ingrese variables</p>
+                <p>
+                    <ul>
+                        <li> cod_alumno: Codigo que ingresa el estudiante</li>
+                        <li> contrasena: Contraseña correspondiente al estudiante</li>
+                    </ul>
+                </p>
                 <h2>Eventos</h2>
-                <p>Ingrese eventos</p>
+                <p>
+                    <ul>
+                    <li>Evento de escucha del formulario para enviar el usuario y contraseña  </li>
+                    <li>Evento de escucha para mostrar/ocultar la contraseña</li>
+                    <li>Evento de consulta con el usuario y contraseña</li>
+                    </ul>
+                </p>
             </div>
             <!--Seccion de Menú-->
             <div id="content3" class="content" style="display: none;">
